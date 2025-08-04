@@ -152,11 +152,11 @@ if(APPLE)
   option(ZMQ_BUILD_FRAMEWORK "Build as OS X framework" OFF)
 endif()
 
-if(EXISTS "${CMAKE_SOURCE_DIR}/.git")
-  option(ENABLE_DRAFTS "Build and install draft classes and methods" ON)
-else()
+#if(EXISTS "${CMAKE_SOURCE_DIR}/.git")
+#  option(ENABLE_DRAFTS "Build and install draft classes and methods" ON)
+#else()
   option(ENABLE_DRAFTS "Build and install draft classes and methods" OFF)
-endif()
+#endif()
 
 # Enable WebSocket transport and RadixTree
 if(ENABLE_DRAFTS)
